@@ -18,6 +18,10 @@ You need a running kafka to connect to, this is not included.
 
 URLs for kafka are hard-coded, grep the codebase for `BOOTSTRAP_SERVERS_CONFIG` and update the URLs.
 
+You might find https://github.com/subos2008/kafka-tools if you are testing a new kafka endpoint.
+
+To start:
+
     docker-compose up
 
 Then open http://localhost:3000/ in your browser
