@@ -11,3 +11,13 @@ Currently the publishing side works: the Web interface POSTS to the REST endpoin
 The kafka consumer (group) also works but does nothing with the received messages.
 
 The list of received events is currently hard coded and not updated as new events come in.
+
+## Usage
+
+You need a running kafka to connect to, this is not included. 
+
+URLs for kafka are hard-coded, grep the codebase for `BOOTSTRAP_SERVERS_CONFIG` and update the URLs.
+
+    docker-compose up
+
+Then open http://localhost:3000/ in your browser
